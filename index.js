@@ -11,7 +11,7 @@ app.use(cors());
 
 app.get("/api/econverse/products", (req, res) => {
   try {
-    return res.json({ succes: true, product: products });
+    return res.json({ succes: true, products: products });
   } catch (error) {
     console.error(error);
   }
